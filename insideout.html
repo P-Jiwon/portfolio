@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSIDE OUT</title>
+
+    <link rel="shortcut icon" href="./images_por/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img,
+        video,
+        iframe {
+            vertical-align: middle;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            background: url(./insideout_JPG/background.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .mySwiper {
+            max-width: 700px;
+        }
+
+        .mySwiper img {
+            width: 100%;
+        }
+
+        .btn {
+            position: absolute;
+            right: 80px;
+            bottom: 45px;
+            z-index: 10;
+        }
+
+        .btn img {
+            width: 100px;
+            height: 80px;
+        }
+
+        #main {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width:699px) {
+            .btn img {
+                width: 50px;
+                height: 40px;
+            }
+
+            .btn {
+                position: absolute;
+                right: 10px;
+                bottom: 15px;
+                z-index: 10;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div id="main">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./insideout_JPG/insideout_1.jpg" alt="인사이드아웃이미지1"></div>
+                <div class="swiper-slide"><img src="./insideout_JPG/insideout_2.jpg" alt="인사이드아웃이미지2"></div>
+                <div class="swiper-slide"><img src="./insideout_JPG/insideout_3.jpg" alt="인사이드아웃이미지3"></div>
+                <div class="swiper-slide"><img src="./insideout_JPG/insideout_4.jpg" alt="인사이드아웃이미지4"></div>
+                <div class="swiper-slide"><img src="./insideout_JPG/insideout_5.jpg" alt="인사이드아웃이미지5"></div>
+                <div class="swiper-slide"><img src="./insideout_JPG/insideout_6.jpg" alt="인사이드아웃이미지6"></div>
+                <div class="swiper-slide"><img src="./insideout_JPG/insideout_7.jpg" alt="인사이드아웃이미지7"></div>
+                <div class="swiper-slide"><img src="./insideout_JPG/insideout_8.jpg" alt="인사이드아웃이미지8"></div>
+                <div class="swiper-slide"><img src="./insideout_JPG/insideout_9.jpg" alt="인사이드아웃이미지9"></div>
+                <div class="swiper-slide"><img src="./insideout_JPG/insideout_10.jpg" alt="인사이드아웃이미지10"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div><!--main-->
+
+
+    <div class="btn">
+        <a href="./index.html">
+            <img src="./insideout_JPG/home_btn.png" alt="home버튼">
+        </a>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

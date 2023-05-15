@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSAN</title>
+
+
+    <link rel="shortcut icon" href="./images_por/favicon2.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img,
+        video,
+        iframe {
+            vertical-align: middle;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            background: url(./images_busan/background.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .mySwiper {
+            max-width: 700px;
+        }
+
+        .mySwiper img {
+            width: 100%;
+        }
+
+        .btn {
+            position: absolute;
+            right: 80px;
+            bottom: 45px;
+            z-index: 10;
+        }
+
+        .btn img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #main {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width:699px) {
+            .btn img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .btn {
+                position: absolute;
+                right: 10px;
+                bottom: 15px;
+                z-index: 10;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div id="main">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images_busan/cover.jpg" alt="부산관광지1"></div>
+                <div class="swiper-slide"><img src="./images_busan/busan1.jpg" alt="부산관광지2"></div>
+                <div class="swiper-slide"><img src="./images_busan/busan2.jpg" alt="부산관광지3"></div>
+                <div class="swiper-slide"><img src="./images_busan/busan3.jpg" alt="부산관광지4"></div>
+                <div class="swiper-slide"><img src="./images_busan/busan4.jpg" alt="부산관광지5"></div>
+                <div class="swiper-slide"><img src="./images_busan/busan5.jpg" alt="부산관광지6"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div><!--main-->
+
+
+    <div class="btn">
+        <a href="./index.html">
+            <img src="./images_busan/home_btn.png" alt="home버튼">
+        </a>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
